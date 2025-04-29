@@ -22,3 +22,15 @@ Swift와 iOS 개발 실력을 키우기 위한 연습용 프로젝트입니다.
 - **Framework**: UIKit
 - **UI Tool**: Storyboard (Auto Layout)
 - **Architecture**: MVC
+
+
+---
+
+## ☕ Support Me
+
+If you liked this project, consider buying me a coffee!  
+프로젝트가 도움이 됐다면 커피 한 잔 어떠신가요? :)
+
+[![Buy Me A Coffee](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png)](https://www.buymeacoffee.com/s4goo)
+
+---
