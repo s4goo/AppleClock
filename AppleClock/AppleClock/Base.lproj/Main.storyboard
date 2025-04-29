@@ -12,18 +12,25 @@
         <!--세계 시계-->
         <scene sceneID="I8V-FT-rBM">
             <objects>
-                <viewController id="be8-a1-ZY5" sceneMemberID="viewController">
+                <viewController id="be8-a1-ZY5" customClass="WorldClockViewController" customModule="AppleClock" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="olx-RL-ZUZ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="9Ab-im-XuY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="세계 시계" image="globe" catalog="system" id="fln-zo-a1u"/>
+                    <navigationItem key="navigationItem" title="세계 시계" id="XaC-fK-E0F">
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="ZLU-AX-9ul">
+                            <color key="tintColor" systemColor="systemOrangeColor"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ALq-2Q-ujc">
+                            <color key="tintColor" systemColor="systemOrangeColor"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lb0-ES-tm9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1266" y="372"/>
+            <point key="canvasLocation" x="-339.69465648854958" y="371.83098591549299"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="qfD-lR-fyN">
@@ -36,12 +43,31 @@
                         <color key="selectedImageTintColor" systemColor="systemOrangeColor"/>
                     </tabBar>
                     <connections>
-                        <segue destination="be8-a1-ZY5" kind="relationship" relationship="viewControllers" id="DqY-eb-5hO"/>
+                        <segue destination="wFx-Bs-zi8" kind="relationship" relationship="viewControllers" id="DqY-eb-5hO"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vdj-aW-tst" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-705" y="-364"/>
+        </scene>
+        <!--세계 시계-->
+        <scene sceneID="8LG-L6-Qhn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wFx-Bs-zi8" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="세계 시계" image="globe" catalog="system" id="fln-zo-a1u"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="PQ2-QX-rnD">
+                        <rect key="frame" x="0.0" y="118" width="393" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="be8-a1-ZY5" kind="relationship" relationship="rootViewController" id="BKG-pU-E81"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zCf-Hs-rO7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1266.4122137404579" y="371.83098591549299"/>
         </scene>
     </scenes>
     <color key="tintColor" systemColor="systemOrangeColor"/>
