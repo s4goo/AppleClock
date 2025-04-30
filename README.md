@@ -2,7 +2,7 @@
 
 [![Swift](https://img.shields.io/badge/Made_with-Swift-orange?logo=swift)](https://swift.org)
 [![Xcode](https://img.shields.io/badge/IDE-Xcode-blue?logo=xcode&logoColor=white)](https://developer.apple.com/xcode/)
-[![Platform](https://img.shields.io/badge/Platform-iOS-lightgrey?logo=apple)]
+[![Platform](https://img.shields.io/badge/Platform-iOS-lightgrey?logo=apple)](https://developer.apple.com/xcode/)
 
 ---
 
