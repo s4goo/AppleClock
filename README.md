@@ -32,7 +32,7 @@ You are free to view, study, modify, and share this code for **educational or pe
 
 이 프로젝트는 **MIT 라이선스**로 배포되며,  
 **개인 공부, 연습, 또는 상업적 용도**로도 자유롭게 사용할 수 있습니다.  
-단, **원작자 표시 | 라이서스 포함**는 필수입니다.
+단, **원작자 표시 | 라이선스 포함**는 필수입니다.
 
 ---
 
