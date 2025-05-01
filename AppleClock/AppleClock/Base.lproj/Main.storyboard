@@ -28,18 +28,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="121"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWF-bS-dpq">
-                                                    <rect key="frame" x="252" y="24.666666666666664" width="121" height="71.666666666666686"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="60"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오전" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWI-nP-rv8">
-                                                    <rect key="frame" x="192" y="49.333333333333343" width="59" height="40.666666666666657"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="KK4-Ed-OBd">
                                                     <rect key="frame" x="20.000000000000007" y="40.333333333333343" width="88.666666666666686" height="46.666666666666657"/>
                                                     <subviews>
@@ -57,6 +45,18 @@
                                                         </label>
                                                     </subviews>
                                                 </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWF-bS-dpq">
+                                                    <rect key="frame" x="252" y="24.666666666666664" width="121" height="71.666666666666686"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="60"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오전" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWI-nP-rv8">
+                                                    <rect key="frame" x="192" y="49.333333333333343" width="59" height="40.666666666666657"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="EWF-bS-dpq" firstAttribute="leading" secondItem="PWI-nP-rv8" secondAttribute="trailing" constant="40" id="7wd-kI-l0G"/>
@@ -73,7 +73,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="spacingConstraint" destination="Aad-2d-kPM" id="c7q-9Y-93T"/>
                                             <outlet property="timeLabel" destination="EWF-bS-dpq" id="PUP-pP-doQ"/>
+                                            <outlet property="timeLabelTrailingConstraint" destination="H7k-XN-wet" id="Ra4-Kx-Kyx"/>
                                             <outlet property="timeOffsetLabel" destination="voQ-U4-Drb" id="6Kd-wi-cf4"/>
                                             <outlet property="timePeriodLabel" destination="PWI-nP-rv8" id="HK9-p3-J8o"/>
                                             <outlet property="timeZoneLabel" destination="c7A-sm-7Ic" id="Jww-k1-pJ7"/>
@@ -96,9 +98,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="세계 시계" id="XaC-fK-E0F">
-                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="ZLU-AX-9ul">
-                            <color key="tintColor" systemColor="systemOrangeColor"/>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="ALq-2Q-ujc">
                             <color key="tintColor" systemColor="systemOrangeColor"/>
                             <connections>
