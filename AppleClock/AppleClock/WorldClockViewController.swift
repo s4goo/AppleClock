@@ -47,7 +47,13 @@ class WorldClockViewController: UIViewController {
                 
                 let target = list[indexPath.row]
                 clockCell.timeLabel.text = target.currentTime
-                clockCell.timePeriodLabel.text = " \(target.timePeriod ?? "")"
+                if target.timePeriod == "AM" {
+                    clockCell.timePeriodLabel.text = "  오전"
+                } else if target.timePeriod == "PM" {
+                    clockCell.timePeriodLabel.text = "  오후"
+                } else {
+                    clockCell.timePeriodLabel.text = "  "
+                }
                 clockCell.timeOffsetLabel.text = target.timeOffset
             }
         })
@@ -72,7 +78,14 @@ extension WorldClockViewController: UITableViewDataSource {
         
         let target = list[indexPath.row]
         cell.timeLabel.text = target.currentTime
-        cell.timePeriodLabel.text = "  \(target.timePeriod ?? "")"
+        if target.timePeriod == "AM" {
+            cell.timePeriodLabel.text = "  오전"
+        } else if target.timePeriod == "PM" {
+            cell.timePeriodLabel.text = "  오후"
+        } else {
+            cell.timePeriodLabel.text = "  "
+        }
+        
         cell.timeZoneLabel.text = target.city
         cell.timeOffsetLabel.text = target.timeOffset
         
